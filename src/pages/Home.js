@@ -1,6 +1,6 @@
 import { renderSearchForm } from '../components/SearchForm.js'
 import { fetchImages } from '../unsplashService.js'
-import { renderImages } from './renderImages.js' // Asegúrate de que esta ruta sea correcta y el archivo exista
+import { renderImages } from './renderImages.js'
 
 export const printHome = async () => {
   try {

@@ -1,5 +1,4 @@
 import { renderImages } from './ImageCard.js'
-
 export function renderSearchForm() {
   const searchContainer = document.getElementById('search-container')
 
@@ -16,6 +15,7 @@ export function renderSearchForm() {
     const query = document.getElementById('search-input').value
     const images = await fetchImages(query)
     renderImages(images)
+    document.getElementById('search-input').value = '' // Limpiar el input después de la búsqueda
   })
 }
 
